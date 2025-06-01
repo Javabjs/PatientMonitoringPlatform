@@ -1,0 +1,70 @@
+/* Container holding sidebar and dashboard main */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main dashboard area excluding sidebar */
+.dashboard-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Each section (Patients, Devices, Vitals) */
+.section {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  overflow-x: auto;
+}
+
+/* Section titles */
+.section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Chart placeholder */
+.chart-placeholder {
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 18px;
+  background-color: #fafafa;
+}
